@@ -1,0 +1,248 @@
+{
+  "brand": {
+    "name": "BusBook",
+    "tagline": "Bus counter & seat booking system"
+  },
+  "nav": {
+    "home": "Home",
+    "signIn": "Sign in",
+    "register": "Create account",
+    "dashboard": "Dashboard"
+  },
+  "role": {
+    "ADMIN": "Admin",
+    "COUNTER": "Counter staff",
+    "DRIVER": "Driver",
+    "PASSENGER": "Passenger"
+  },
+  "status": {
+    "active": "Active",
+    "suspended": "Suspended",
+    "pending": "Pending"
+  },
+  "home": {
+    "phaseBadge": "Phase 8 · Refunds, reports & driver map live",
+    "title": "Book your bus seat with confidence",
+    "subtitle": "One clean system for passengers, counter staff, drivers and administrators — with server-verified seat holds, so two people can never buy the same seat.",
+    "primaryCta": "Find your seat",
+    "secondaryCta": "See the four dashboards",
+    "foundationTitle": "What is working right now",
+    "foundation": {
+      "api": "Express API with security middleware and rate limiting",
+      "db": "Mongoose models, indexes and the seed script for MongoDB Atlas",
+      "ui": "React shell with Tailwind design tokens and Bangla/English switching",
+      "docs": "Architecture, database and risk plan",
+      "auth": "Sign-in, password reset, JWT httpOnly cookies and role guards",
+      "admin": "Admin dashboard for buses, routes, drivers and trips",
+      "booking": "Live trip search, interactive seat map and 2-minute server holds",
+      "tickets": "Hold-to-ticket conversion, cash counter sales, SSLCommerz checkout and printable tickets",
+      "cancellations": "Cancellation with policy-based refund tracking and an honest admin workflow",
+      "driver": "Driver console with trip status, passenger manifest and a manual location map",
+      "reports": "Sales reports with CSV export and totals built from stored bookings"
+    },
+    "nextTitle": "Before going live",
+    "next": {
+      "deploy": "Deployment setup for MongoDB Atlas, Render and Vercel is included",
+      "credentials": "Real email, SMS and SSLCommerz credentials can be added when available"
+    },
+    "rolesTitle": "Four dashboards, one system",
+    "rolesSubtitle": "Each role gets an interface built for the work it actually does — not one generic dashboard.",
+    "roles": {
+      "admin": {
+        "name": "Admin",
+        "description": "Buses, routes, drivers, trips, counters, users, revenue and reports.",
+        "phase": "Live"
+      },
+      "counter": {
+        "name": "Counter staff",
+        "description": "Find trips, sell seats, collect cash, print tickets and cancel bookings.",
+        "phase": "Live"
+      },
+      "driver": {
+        "name": "Driver",
+        "description": "Today's trip, start/pause/complete, and manual location updates.",
+        "phase": "Live"
+      },
+      "passenger": {
+        "name": "Passenger",
+        "description": "Search buses, pick a seat, pay online and keep a digital ticket.",
+        "phase": "Live"
+      }
+    }
+  },
+  "health": {
+    "title": "System status",
+    "subtitle": "Live check of the API and the database connection.",
+    "api": "API",
+    "database": "Database",
+    "environment": "Environment",
+    "uptime": "Uptime",
+    "serverTime": "Server time",
+    "online": "Online",
+    "offline": "Offline",
+    "degraded": "Degraded",
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "notConfigured": "Not configured",
+    "checking": "Checking…",
+    "retry": "Check again",
+    "lastChecked": "Checked at {{time}}",
+    "setupTitle": "Connect MongoDB Atlas to finish the setup",
+    "setupSteps": "Inside server/, copy .env.example to .env, paste your Atlas URI into MONGODB_URI, restart the backend, then run npm run seed.",
+    "errorTitle": "Cannot reach the API",
+    "copyEnv": "Copy .env.example to .env inside server/ (Windows PowerShell: Copy-Item .env.example .env)"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in",
+      "subtitle": "Use your email or phone number to continue.",
+      "submit": "Sign in",
+      "noAccount": "New here?",
+      "createOne": "Create an account",
+      "forgot": "Forgot your password?",
+      "welcome": "Welcome back, {{name}}"
+    },
+    "register": {
+      "title": "Create your account",
+      "subtitle": "Register to book seats and keep your tickets in one place.",
+      "submit": "Create account",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "created": "Account created"
+    },
+    "forgot": {
+      "title": "Reset your password",
+      "subtitle": "Enter your email and we will send you a reset link.",
+      "submit": "Send reset link",
+      "sentTitle": "Check your email",
+      "sentBody": "If that email is registered, a reset link has been sent. It stays valid for 30 minutes.",
+      "devTitle": "Development mode",
+      "devBody": "No email provider is configured, so the reset link is shown here instead of being sent:",
+      "openLink": "Open the reset page",
+      "backToSignIn": "Back to sign in"
+    },
+    "reset": {
+      "title": "Choose a new password",
+      "subtitle": "Enter and confirm your new password.",
+      "submit": "Update password",
+      "successTitle": "Password updated",
+      "successBody": "Your password has been changed and other sessions were signed out.",
+      "goToSignIn": "Sign in now"
+    },
+    "fields": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Mobile number",
+      "identifier": "Email or mobile number",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "currentPassword": "Current password",
+      "newPassword": "New password"
+    },
+    "hints": {
+      "phone": "Example: 01712345678",
+      "password": "At least 8 characters, with one letter and one number."
+    },
+    "logout": "Sign out",
+    "signedOut": "You have been signed out"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "phone": "Enter a valid Bangladeshi mobile number (e.g. 01712345678)",
+    "identifier": "Enter your email or phone number",
+    "nameMin": "Name must be at least 2 characters",
+    "nameMax": "Name cannot be longer than 80 characters",
+    "passwordRequired": "Password is required",
+    "passwordMin": "Password must be at least 8 characters",
+    "passwordMax": "Password cannot be longer than 72 characters",
+    "passwordLetter": "Password must contain at least one letter",
+    "passwordNumber": "Password must contain at least one number",
+    "passwordMatch": "The two passwords do not match"
+  },
+  "account": {
+    "title": "My account",
+    "subtitle": "Your profile and session details.",
+    "profileTitle": "Profile",
+    "status": "Account status",
+    "memberSince": "Member since",
+    "lastLogin": "Last sign-in",
+    "changePasswordTitle": "Change password",
+    "changePasswordSubtitle": "Confirm your current password to set a new one.",
+    "changePasswordSubmit": "Update password",
+    "passwordChanged": "Your password has been updated",
+    "sessionTitle": "How your session works",
+    "sessionBody": "Your sign-in token is stored in an httpOnly cookie: the browser sends it automatically and JavaScript cannot read it, so a script injected into the page cannot steal it. Changing your password signs out every other session.",
+    "comingTitle": "Need help with a ticket?",
+    "comingBody": "Open any ticket from the list below, or contact the counter where you bought it.",
+    "ticketsTitle": "My tickets",
+    "ticketsSubtitle": "Tickets booked with this account or this mobile number.",
+    "ticketPaid": "Paid",
+    "ticketDue": "Payment due",
+    "openTicket": "Open ticket",
+    "noTickets": "No tickets yet. Search for a bus to book your first seat.",
+    "lookupLink": "Find a ticket by number"
+  },
+  "rolesHome": {
+    "plannedTitle": "Planned for this dashboard",
+    "note": "Your role already controls which pages you can open. The dashboard content arrives in the phase shown above.",
+    "admin": {
+      "title": "Admin dashboard",
+      "subtitle": "Manage buses, routes, trips, counters and users.",
+      "phase": "Phase 4",
+      "items": [
+        "Bus, driver and route management",
+        "Trip creation, scheduling and cancellation",
+        "Counters and staff assignment",
+        "Revenue, reports and analytics"
+      ]
+    },
+    "counter": {
+      "title": "Counter dashboard",
+      "subtitle": "Sell tickets, take cash and manage bookings.",
+      "phase": "Phase 6",
+      "items": [
+        "Search trips and open the seat map",
+        "Sell a seat with passenger details",
+        "Cash payment and ticket printing",
+        "Search and cancel a booking by ID"
+      ]
+    },
+    "driver": {
+      "title": "Driver dashboard",
+      "subtitle": "Today's trip, status updates and manual location reporting.",
+      "phase": "Phase 7",
+      "items": [
+        "Today's assigned trip and bus details",
+        "Start trip, at stop and complete",
+        "Manual location updates",
+        "Route and passenger summary"
+      ]
+    }
+  },
+  "forbidden": {
+    "title": "You do not have access",
+    "subtitle": "This page belongs to a different role.",
+    "requires": "Required role:",
+    "backHome": "Go to your dashboard"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again."
+  },
+  "common": {
+    "loading": "Loading…",
+    "working": "Please wait…",
+    "retry": "Retry",
+    "phase": "Phase {{number}}",
+    "closeNotification": "Close notification"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "The page you asked for does not exist yet.",
+    "backHome": "Back to home"
+  },
+  "footer": {
+    "builtWith": "Built with React, Express and MongoDB Atlas.",
+    "note": "Phases 1–8 are complete and tested; the deployment guide covers Atlas, Render and Vercel."
+  }
+}
