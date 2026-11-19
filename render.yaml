@@ -1,0 +1,52 @@
+# Render Blueprint — BusBook API
+#
+# Import this repository in Render → "New +" → "Blueprint". Render reads this
+# file, creates the web service and asks for the values marked `sync: false`.
+# The database itself is MongoDB Atlas, not a Render database.
+services:
+  - type: web
+    name: busbook-api
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: server
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Signing key: Render generates it once. Never paste it into a file.
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+
+      # Set these in the Render dashboard after the first import.
+      - key: MONGODB_URI
+        sync: false
+      - key: CLIENT_URL
+        sync: false
+      - key: API_PUBLIC_URL
+        sync: false
+
+      # Real data only: the demo fleet must never be seeded in production.
+      - key: SEED_DEMO_DATA
+        value: 'false'
+
+      # Optional integrations — leave blank to stay in honest mock mode.
+      - key: RESEND_API_KEY
+        sync: false
+      - key: MAIL_FROM
+        sync: false
+      - key: SSL_WIRELESS_API_TOKEN
+        sync: false
+      - key: SSL_WIRELESS_SID
+        sync: false
+      - key: SSLCOMMERZ_STORE_ID
+        sync: false
+      - key: SSLCOMMERZ_STORE_PASSWORD
+        sync: false
+      - key: SSLCOMMERZ_SANDBOX
+        value: 'true'
